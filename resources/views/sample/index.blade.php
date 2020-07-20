@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 @if (Session::get('name') == "admin")
-<div class="container" style="padding-top: 10px">
+
     <div class="row" style="padding-left: 0 5px 0 5px">
         <div class="col-lg-5">
             {{-- menampilkan error validasi --}}
@@ -20,10 +20,8 @@
         </form>
         </div>
 
-
         <div class ="col-lg-7">
         <table class="table">
-        
                 <thead>
                                 <tr>
                                 <th width="10px">No</th>
@@ -87,7 +85,7 @@
         </tbody>
 </table>
 <!-- {!! $datas->render() !!} -->
-</div>
+
 @endif
 
 

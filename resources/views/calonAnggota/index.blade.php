@@ -1,8 +1,7 @@
 @extends('layouts.main')
 @section('content')
-<div class="container" style="padding-top: 10px">
     <div class="row" style="padding-left: 0 5px 0 5px">
-        <div class="col-lg-5">
+        <div class="col-lg-3">
             {{-- menampilkan error validasi --}}
                             @if (count($errors) > 0)
                             <div class="alert alert-danger">
@@ -21,11 +20,11 @@
         </div>
 
 
-        <div class ="col-lg-7">
+        <div class ="col-lg-7 table-responsive-xl">
         <table class="table">
                 <thead>
                                 <tr>
-                                <th width="10px">No</th>
+                                <th>No</th>
                                 <th>NIM</th>
                                 <th>Nama</th>
                                 <th>Jurusan</th>
@@ -62,7 +61,6 @@
 
         </div>
     </div>
-</div>
 @endsection
 
 

@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>@yield('title')</title>
+    <style>
+    body {
+        background-image: url("/image/logo.png");
+        background-repeat: no-repeat;
+        background-position: center 100px;
+        background-size: 500px;
+    }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -68,7 +76,12 @@
             
         </div>
     </nav>
+
+    
+    <div class="container" style="padding-top: 10px">
     @yield('content')
+    </div>
+
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
