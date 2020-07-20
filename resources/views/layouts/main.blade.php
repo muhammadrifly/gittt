@@ -32,7 +32,7 @@
                             </li>
                             @endif
                             <li><a class="nav-item nav-link" href="/sample" >Hasil</a></li>
-                            <li><a class="nav-item nav-link" href="/dept_anggota">{{Session::get('email')}}</a></li>
+                            <li><a class="nav-item nav-link" href="/reset">{{Session::get('email')}}</a></li>
                             
                          </ul>
                    </div>

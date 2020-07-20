@@ -21,6 +21,7 @@ Route::resource('kriteria', 'admin\\kriteriaController');
 Route::resource('subkriteria', 'admin\\subKriteriaController');
 Route::resource('nilai', 'admin\\nilaiController');
 Route::resource('sample', 'admin\\sampleController');
+Route::resource('reset', 'admin\\updatePasswordController');
 
 Route::post('/login', 'Login@login');
 Route::get('/logout', 'Auth\LoginController@logout');
@@ -28,3 +29,4 @@ Route::get('/logout', 'Auth\LoginController@logout');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('updatepassword','Login@update');

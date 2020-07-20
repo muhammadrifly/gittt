@@ -50,6 +50,7 @@ class LoginController extends Controller
             if($password == $data->password){
                 Session::put('name',$data->name);
                 Session::put('email',$data->email);
+                Session::put('id',$data->id);
                 Session::put('login',TRUE);
                 return redirect('home');
             }
@@ -66,5 +67,23 @@ class LoginController extends Controller
     {
         Session::flush();
         return redirect('login')->with('alert','Kamu sudah logout');
+    }
+
+    public function resset()
+    {
+        // $datas = CalonAnggota::orderBy('id', 'DESC')->paginate(10);
+        return view('resetpassword.index');
+    }
+
+    public function index()
+    {
+        // $datas = CalonAnggota::orderBy('id', 'DESC')->paginate(10);
+        return view('resetpassword.index');
+    }
+    
+    public function update()
+    {
+        // $datas = CalonAnggota::orderBy('id', 'DESC')->paginate(10);
+        return view('resetpassword.index');
     }
 }
