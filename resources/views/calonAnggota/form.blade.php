@@ -43,13 +43,13 @@
    
 </div>
 
-
+<!-- 
 <div class="form-group row">
     <label for="password" class="control-label">{{ 'Password' }}</label>
     <input class="form-control @error('password') is-invalid @enderror" name="password" type="password" id="password" value="{{ isset($datas->password) ? $datas->password : ''}}" >
      
   
-</div>
+</div> -->
 
 
 <div class="form-group">
