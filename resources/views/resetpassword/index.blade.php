@@ -1,19 +1,23 @@
 @extends('layouts.main')
-
 @section('content')
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <!-- <div class="card-header">{{ __('Reset Password') }}</div> -->
+
+
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
+
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
-                        @csrf
-
-                        <input type="hidden" name="token" value="{{ $token }}">
-
-                        <div class="form-group row">
+                    <form method="POST" action="{{ url('reset') }}">
+                        <!-- <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -25,8 +29,8 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-
+                        </div> -->
+		                {{ csrf_field() }}
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -63,3 +67,6 @@
     </div>
 </div>
 @endsection
+
+
+  

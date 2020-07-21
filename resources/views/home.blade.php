@@ -12,7 +12,7 @@
                         </div>
                     @endif
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 @endsection

@@ -30,7 +30,7 @@
                                 <th>Jurusan</th>
                                 <th>Email</th>
                                 <th>No Telp</th>
-                                <th>password</th>
+                                <!-- <th>password</th> -->
                                 <th>Action</th>
                                 </tr>
                 </thead>
@@ -44,7 +44,7 @@
                                     <th>{{ $item->jurusan }}</th>
                                     <th>{{ $item->email_calonanggota }}</th>
                                     <th>{{ $item->nomor_telp }}</th>
-                                    <th>{{ $item->password }}</th>
+                                    <!-- <th>{{ $item->password }}</th> -->
                                     <td>
                                         <a href="{{ route('data-ca.edit',$item->id)}}"class="btn btn-success btn-sm ">Edit</a>
                                         <form method="POST" action="{{ url('/data-ca' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
