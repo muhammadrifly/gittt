@@ -22,7 +22,7 @@ class calonAnggotaController extends Controller
         	            'nama_calonanggota' => ['required', 'string', 'max:20'],
         	            'jurusan' => ['required', 'string', 'max:255'],
         	            'nomor_telp' => ['required', 'string'],
-        	            'password' => ['required', 'string', 'min:5'],
+        	            // 'password' => ['required', 'string', 'min:5'],
         	            'email_calonanggota' => ['required', 'string', 'email', 'max:255', 'unique:data_calonanggota'],
         	        ]);
 
@@ -45,7 +45,7 @@ class calonAnggotaController extends Controller
                         'nama_calonanggota' => ['required', 'string', 'max:20'],
                         'jurusan' => ['required', 'string', 'max:255'],
                         'nomor_telp' => ['required', 'string'],
-                        'password' => ['required', 'string', 'min:5'],
+                        // 'password' => ['required', 'string', 'min:5'],
                         'email_calonanggota' => ['required', 'string', 'email', 'max:255'],
                     ]);
 
@@ -54,7 +54,7 @@ class calonAnggotaController extends Controller
                         'nama_calonanggota' => $request->nama_calonanggota,
                         'jurusan' => $request->jurusan,
                         'nomor_telp' => $request->nomor_telp,
-                        'password' => $request->password,
+                        // 'password' => $request->password,
                         'email_calonanggota' => $request->email_calonanggota,
                     );
                     CalonAnggota::where('id',$id)->update($form_data);
