@@ -137,6 +137,7 @@ class sampleController extends Controller
         
         
         try {
+            $totalnilai = [];
 
             foreach($ca as $item){
                 // print_r($listCalonlk1[$item->id]);
