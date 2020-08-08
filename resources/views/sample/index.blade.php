@@ -74,11 +74,13 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->nama_calonanggota }}</td>
-                <td>{{ $totalnilai[$item->id]['nilai'] }}</td>
-                @if ($totalnilai[$item->id]['nilai'] >= 2.5)
-                <td>Lulus</td>
-                @else
-                <td>Tidak Lulus</td>
+                @if(empty($totalnilai))
+                    <td>{{ $totalnilai[$item->id]['nilai'] }}</td>
+                    @if ($totalnilai[$item->id]['nilai'] >= 2.5)
+                    <td>Lulus</td>
+                    @else
+                    <td>Tidak Lulus</td>
+                    @endif
                 @endif
             </tr>
         @endforeach
