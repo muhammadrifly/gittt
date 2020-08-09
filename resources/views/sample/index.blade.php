@@ -65,7 +65,7 @@
                         <tr>
                         <th width="10px">No</th>
                         <th>Nama</th>
-                        <th>values</th>
+                        <!-- <th>values</th> -->
                         <th>Status</th>
                         </tr>
         </thead>
