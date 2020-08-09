@@ -75,7 +75,6 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->nama_calonanggota }}</td>
                 @if(!empty($totalnilai[$item->id]))
-                    <td>{{ $totalnilai[$item->id]['nilai'] }}</td>
                     @if ($totalnilai[$item->id]['nilai'] >= 2.5)
                     <td>Lulus</td>
                     @else
